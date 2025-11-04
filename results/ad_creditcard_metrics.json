@@ -1,0 +1,89 @@
+{
+  "optiforest_params": {
+    "num_trees": 10,
+    "n_runs": 1,
+    "lsh_family": "L2OPT",
+    "granularity": 1
+  },
+  "original_ad": {
+    "path": "data/ad.csv",
+    "n_samples": 3279,
+    "n_features": 1555,
+    "n_anomalies": 459,
+    "threshold": 403,
+    "branch": 0,
+    "results": {
+      "roc_auc_mean": 0.7736734961912266,
+      "roc_auc_std": 0.0,
+      "pr_auc_mean": 0.4553044886884515,
+      "pr_auc_std": 0.0,
+      "train_time_mean": 2.75829815864563,
+      "test_time_mean": 4.272909879684448,
+      "n_runs": 1,
+      "num_trees": 10,
+      "threshold": 403,
+      "branch": 0,
+      "lsh_family": "L2OPT",
+      "granularity": 1
+    }
+  },
+  "new_creditcard": {
+    "path": "data/creditcard.csv",
+    "n_samples": 50000,
+    "n_features": 29,
+    "n_anomalies": 83,
+    "threshold": 403,
+    "branch": 0,
+    "label_column": "Class",
+    "feature_columns": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16",
+      "V17",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22",
+      "V23",
+      "V24",
+      "V25",
+      "V26",
+      "V27",
+      "V28",
+      "Amount"
+    ],
+    "max_samples": 50000,
+    "preprocessing": {
+      "drop_time": true,
+      "scale_features": true
+    },
+    "results": {
+      "roc_auc_mean": 0.9439508137725492,
+      "roc_auc_std": 0.0,
+      "pr_auc_mean": 0.08445163121432034,
+      "pr_auc_std": 0.0,
+      "train_time_mean": 2.1603777408599854,
+      "test_time_mean": 35.02192306518555,
+      "n_runs": 1,
+      "num_trees": 10,
+      "threshold": 403,
+      "branch": 0,
+      "lsh_family": "L2OPT",
+      "granularity": 1
+    }
+  }
+}
