@@ -17,7 +17,7 @@ We evaluate all methods on 20 widely-used benchmark datasets, which are availabl
 
 # Repository Creation
 
-The original author's repository was forked and the new branch was ads_Final_project was created, where all the works are committed.
+The original author's repository was forked and the new branch ads_Final_project was created, where all the works are committed.
 
 # Experiment
 
