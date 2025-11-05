@@ -1,9 +1,9 @@
 """
 run_optiforest_ad_creditcard.py
 ADS Final Project – Default OptIForest Project
-This script is designed to satisfy the ADS Final Project (Document 2) requirements:
+This script is designed to satisfy the Final Project requirements:
 1. Replication of original work:
-   - Run OptIForest on the original "AD" dataset (data/ad.csv).
+   - Run OptIForest on the original "ad" dataset (data/ad.csv).
 2. Construction/use of NEW data:
    - Use the Kaggle "Credit Card Fraud Detection" dataset (data/creditcard.csv)
      as NEW data.
@@ -18,7 +18,7 @@ This script is designed to satisfy the ADS Final Project (Document 2) requiremen
    - Save all metrics to results/ad_creditcard_metrics.json for inclusion
      in the LaTeX report and GitHub repo.
 Usage (from repo root):
-    python -m experiments.run_optiforest_ad_creditcard
+    python -m experiments.optiforest_ad_creditcard
 """
 import argparse
 import json
@@ -220,7 +220,7 @@ def run_optiforest_experiment(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Run OptIForest on AD (original) and creditcard (new) datasets."
+        description="Run OptIForest on original and creditcard (new) datasets."
     )
 
     # AD (original) dataset options
@@ -307,7 +307,7 @@ def main():
 
     os.makedirs(args.output_dir, exist_ok=True)
 
-    # --- AD dataset (original) ---
+    # AD dataset (original) 
     X_ad, y_ad = load_ad_dataset(args.ad_path)
     n_ad, d_ad = X_ad.shape
     n_ad_anom = int(y_ad.sum())
@@ -325,7 +325,7 @@ def main():
         n_runs=args.n_runs,
     )
 
-    # --- Credit card dataset (new data) ---
+    # Credit card dataset (new data)
     X_cc, y_cc, feature_cols_cc, label_col_cc = load_creditcard_dataset(
         args.cc_path,
         drop_time=True,
@@ -352,7 +352,7 @@ def main():
         n_runs=args.n_runs,
     )
 
-    # --- Save metrics to JSON ---
+    # Save metrics to JSON 
     metrics = {
         "optiforest_params": {
             "num_trees": int(args.num_trees),
@@ -393,7 +393,7 @@ def main():
     with open(metrics_path, "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2)
 
-    # --- Console summary ---
+    #  Console summary
     print("\n=== ORIGINAL AD DATA RESULTS ===")
     for k, v in ad_results.items():
         print(f"{k}: {v}")
@@ -408,3 +408,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
