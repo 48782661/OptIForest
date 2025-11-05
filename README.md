@@ -4,6 +4,9 @@ This repository contains the code for the experiments of the paper "OptIForest: 
 
 # Requirement
 
+Some dependencies had newer versions than those listed in the paper; where
+necessary, slight adjustments were made to ensure compatibility with Python 3.11, while preserving core functionality.
+
 - numpy==1.20.1
 - sklearn==0.22.1
 - pandas==1.4.1
@@ -11,6 +14,10 @@ This repository contains the code for the experiments of the paper "OptIForest: 
 # Dataset
 
 We evaluate all methods on 20 widely-used benchmark datasets, which are available in public [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.php), [Kaggle Repository](https://www.kaggle.com/datasets), and [ADRepository](https://github.com/GuansongPang/ADRepository-Anomaly-detection-datasets).
+
+# Repository Creation
+
+The original author's repository was forked and the new branch was ads_Final_project was created, where all the works are committed.
 
 # Experiment
 
