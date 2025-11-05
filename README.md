@@ -16,9 +16,13 @@ We evaluate all methods on 20 widely-used benchmark datasets, which are availabl
 
 ### You can try different `--threshold` (the cut threshold), `--branch` (number of branching factor) to see how the AUC performance changes.
 
-### An example for running the code:
+### An example for running the original code:
 
     python demo.py --dataset=ad --threshold=403 --branch=0
+
+### An example for running the extension/replication code:
+
+    python -m experiments.optiforest_ad_creditcard
 
 ## Dataset Access
 
