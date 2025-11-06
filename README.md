@@ -1,4 +1,6 @@
-# Optimal Isolation Forest for Anomaly Detection
+# Name: Gayatri Giri(48782661)
+
+# Optimal Isolation Forest for Anomaly Detection (Replication and Extension)
 
 This repository contains the code for the experiments of the paper "OptIForest: Optimal Isolation Forest for Anomaly Detection".
 
